@@ -1,0 +1,23 @@
+@import "../../styles/variables";
+@import "../../styles/components/navigation";
+
+.container {
+  @include navigation-container;
+}
+
+.logo__link,
+.navigation__link {
+  @include navigation-link(false);
+}
+
+.navigation__ul {
+  @include navigation-ul;
+}
+
+.navigation__link--active {
+  @include navigation-link(true);
+}
+
+.logo__link--txt {
+  font-size: $font-size-lg;
+}

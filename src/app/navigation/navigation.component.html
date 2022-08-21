@@ -1,0 +1,22 @@
+<header class="container">
+  <div *ngIf="hasLogo" class="logo">
+    <a class="navigation__link--active" routerLink="/home">
+      <span class="logo__link--txt">Star Wars</span>
+    </a>
+  </div>
+
+  <nav class="navigation">
+    <ul class="navigation__ul">
+      <li *ngFor="let link of navigationLinks; index as i">
+        <a
+          [routerLink]="[getLink(i)]"
+          class="navigation__link"
+          routerLinkActive="navigation__link--active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          appBoldLink
+          >{{ link }}</a
+        >
+      </li>
+    </ul>
+  </nav>
+</header>

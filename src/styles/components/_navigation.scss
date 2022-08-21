@@ -1,0 +1,30 @@
+@import "../variables";
+@import "../colors";
+@import "../typography";
+
+@mixin navigation-container() {
+  background-color: map-get($colors, "dark");
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1;
+  align-items: center;
+  justify-items: center;
+  padding: $padding-sm;
+}
+
+@mixin navigation-ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1;
+  grid-gap: 1em;
+}
+
+@mixin navigation-link($is-active) {
+  text-decoration: none;
+  @if ($is-active) {
+    @include typography(white, false, true);
+  } @else {
+    @include typography(map-get($colors, "light-dark"), false, false);
+  }
+}

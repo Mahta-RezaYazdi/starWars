@@ -1,0 +1,19 @@
+<div class="main">
+  <div class="container">
+    <nav class="navigation">
+      <ul class="navigation__ul">
+        <li *ngFor="let link of links; index as i">
+          <a
+            [routerLink]="[getLink(i)]"
+            class="navigation__link"
+            routerLinkActive="navigation__link--active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            appBoldLink
+            >{{ link }}</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <router-outlet></router-outlet>
+</div>

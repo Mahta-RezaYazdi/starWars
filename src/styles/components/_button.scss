@@ -1,0 +1,14 @@
+@import "../variables";
+@import "../colors";
+@import "../typography";
+
+@mixin btn() {
+  background-color: map-get($colors, "dark");
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  margin-bottom: 0;
+  margin-top: $base-margin;
+  @include typography(white, false, true);
+}

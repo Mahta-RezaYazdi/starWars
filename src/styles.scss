@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "./styles/colors";
+*,
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: map-get($colors, "light");
+}

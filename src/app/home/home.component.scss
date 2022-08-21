@@ -1,0 +1,25 @@
+@import "../../styles/variables";
+@import "../../styles/components/navigation";
+
+.main {
+  background-color: map-get($colors, "dark");
+  margin-top: $base-margin;
+  margin-bottom: $base-margin;
+  border-radius: $base-border-radius;
+}
+
+.navigation {
+  padding: $base-padding;
+}
+
+.navigation__link {
+  @include navigation-link(false);
+}
+
+.navigation__ul {
+  @include navigation-ul;
+}
+
+.navigation__link--active {
+  @include navigation-link(true);
+}

@@ -1,0 +1,16 @@
+@import "../../styles/variables";
+@import "../../styles/typography";
+@import "../../styles/colors";
+
+.section {
+  background-color: map-get($colors, "dark");
+  margin: 0px $base-margin;
+}
+
+.title {
+  @include typography(white, true, true);
+}
+
+.container {
+  list-style-type: none;
+}

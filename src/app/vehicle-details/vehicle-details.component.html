@@ -1,0 +1,36 @@
+<section class="section">
+  <app-back-button url="/home/vehicles"></app-back-button>
+
+  <ul class="container">
+    <h1 class="title">{{ vehicleDetails.name }}</h1>
+
+    <li class="item">
+      Model: <span>{{ vehicleDetails.model }}</span>
+    </li>
+    <li class="item">
+      Manufacturer: <span>{{ vehicleDetails.manufacturer }}</span>
+    </li>
+    <li class="item">
+      Length: <span>{{ vehicleDetails.length }}</span>
+    </li>
+    <li class="item">
+      Max Atmosphering Speed:
+      <span>{{ vehicleDetails.max_atmosphering_speed }}</span>
+    </li>
+    <li class="item">
+      Cargo Capacity: <span>{{ vehicleDetails.cargo_capacity }}</span>
+    </li>
+    <li class="item">
+      Passengers: <span>{{ vehicleDetails.passengers }}</span>
+    </li>
+    <li class="item">
+      Crew: <span>{{ vehicleDetails.crew }}</span>
+    </li>
+    <li class="item">
+      Consumables: <span>{{ vehicleDetails.consumables }}</span>
+    </li>
+    <li class="item">
+      Cost in Credits: <span>{{ vehicleDetails.cost_in_credits }}</span>
+    </li>
+  </ul>
+</section>

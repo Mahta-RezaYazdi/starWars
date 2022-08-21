@@ -1,0 +1,32 @@
+@import "../../styles/typography";
+@import "../../styles/colors";
+
+.section {
+  background-color: map-get($colors, "dark");
+}
+
+.title {
+  @include typography(white, true, true);
+  text-align: center;
+  margin-top: 0;
+  font-size: $font-size-xlg;
+}
+
+.container {
+  background-color: gray;
+  list-style-type: none;
+  padding-top: 0;
+  padding-left: $padding-sm;
+  padding-right: $padding-sm;
+  padding-bottom: $padding-lg;
+  li {
+    margin: 0;
+  }
+}
+
+.item {
+  background-color: map-get($colors, "light");
+  padding: $base-padding;
+  border: 1px solid map-get($colors, "light-dark");
+  @include typography(map-get($colors, "dark"), false, true);
+}

@@ -1,0 +1,7 @@
+@import "./variables";
+
+$colors: (
+  "dark": $primary,
+  "light": $secondary,
+  "light-dark": lighten($primary, 50%),
+);

@@ -1,0 +1,22 @@
+<section class="section">
+  <ul class="container">
+    <li
+      *ngFor="
+        let item of species
+          | paginate: { itemsPerPage: 15, currentPage: pageNumber };
+        index as i
+      "
+    >
+      <app-species
+        [species]="item"
+        [id]="i + (pageNumber - 1) * 15"
+      ></app-species>
+    </li>
+  </ul>
+
+  <pagination-controls
+    (pageChange)="pageNumber = $event"
+    previousLabel="&#60;"
+    nextLabel="&#62;"
+  ></pagination-controls>
+</section>

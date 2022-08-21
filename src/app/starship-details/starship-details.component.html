@@ -1,0 +1,42 @@
+<section class="section">
+  <app-back-button url="/home/starships"></app-back-button>
+
+  <ul class="container">
+    <h1 class="title">{{ starshipsDetails.name }}</h1>
+
+    <li class="item">
+      Model: <span>{{ starshipsDetails.model }}</span>
+    </li>
+    <li class="item">
+      Manufacturer: <span>{{ starshipsDetails.manufacturer }}</span>
+    </li>
+    <li class="item">
+      MGLT: <span>{{ starshipsDetails.MGLT }}</span>
+    </li>
+    <li class="item">
+      Length: <span>{{ starshipsDetails.length }}</span>
+    </li>
+    <li class="item">
+      Max Atmosphering Speed:
+      <span>{{ starshipsDetails.max_atmosphering_speed }}</span>
+    </li>
+    <li class="item">
+      Hyperdive Rating: <span>{{ starshipsDetails.hyperdrive_rating }}</span>
+    </li>
+    <li class="item">
+      Cargo Capacity: <span>{{ starshipsDetails.cargo_capacity }}</span>
+    </li>
+    <li class="item">
+      Passengers: <span>{{ starshipsDetails.passengers }}</span>
+    </li>
+    <li class="item">
+      Crew: <span>{{ starshipsDetails.crew }}</span>
+    </li>
+    <li class="item">
+      Consumables: <span>{{ starshipsDetails.consumables }}</span>
+    </li>
+    <li class="item">
+      Cost in Credits: <span>{{ starshipsDetails.cost_in_credits }}</span>
+    </li>
+  </ul>
+</section>
